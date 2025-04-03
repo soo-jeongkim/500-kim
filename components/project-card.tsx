@@ -9,11 +9,10 @@ interface ProjectCardProps {
   subtitle?: string
   description: string
   categories: ProjectCategory[]
-  imageUrl?: string
   link?: string
 }
 
-export function ProjectCard({ title, subtitle, description, categories, imageUrl, link }: ProjectCardProps) {
+export function ProjectCard({ title, subtitle, description, categories, link }: ProjectCardProps) {
   const { theme } = useTheme()
   const isDarkTheme = theme === "dark"
 
@@ -67,22 +66,12 @@ export function ProjectCard({ title, subtitle, description, categories, imageUrl
 
   return (
     <motion.div
-      className="relative rounded-2xl bg-gradient-to-b from-background/80 to-background/40 backdrop-blur-lg border border-border/40 shadow-lg overflow-hidden h-[400px] flex flex-col min-w-[300px] w-[350px]"
+      className="relative rounded-2xl bg-gradient-to-b from-background/80 to-background/40 backdrop-blur-lg border border-border/40 shadow-lg overflow-hidden h-[250px] flex flex-col w-full"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -5, transition: { duration: 0.2 } }}
     >
-      {imageUrl && (
-        <div className="h-48 overflow-hidden">
-          <img
-            src={imageUrl || "/placeholder.svg"}
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-          />
-        </div>
-      )}
-
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex flex-wrap gap-1 mb-2">
           {categories.map((category) => {
@@ -99,7 +88,7 @@ export function ProjectCard({ title, subtitle, description, categories, imageUrl
         </div>
         <h3 className="text-xl font-semibold mb-1">{title}</h3>
         {subtitle && <p className="text-sm text-muted-foreground mb-2">{subtitle}</p>}
-        <p className="text-muted-foreground text-sm flex-grow">{description}</p>
+        <p className="text-muted-foreground text-sm flex-grow line-clamp-3">{description}</p>
 
         {link && (
           <a

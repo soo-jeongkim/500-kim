@@ -1,12 +1,13 @@
 export type ProjectCategory = "research" | "bio" | "ai" | "impact" | "education" | "events"
 
+// Update the Project interface to make imageUrl optional
 export interface Project {
   id: string
   title: string
   subtitle?: string
   description: string
   categories: ProjectCategory[]
-  imageUrl: string
+  imageUrl?: string
   link?: string
 }
 
@@ -23,9 +24,9 @@ export const projects: Project[] = [
   },
   {
     id: "project2",
-    title: "MPhil Engineering (Biomedical & Information)",
+    title: "MPhil Engineering",
     subtitle: "University of Cambridge",
-    description: "Computer vision; GNNs; Motion analysis.",
+    description: "Biomedical & Information Division. Computer vision; GNNs; Motion analysis.",
     categories: ["ai", "bio", "research", "education"],
     imageUrl: "/images/mphil.jpg",
     link: "https://www.eng.cam.ac.uk/",
@@ -41,7 +42,7 @@ export const projects: Project[] = [
   },
   {
     id: "project4",
-    title: "Exchange",
+    title: "Exchange, Bioengineering",
     subtitle: "ETH Zurich",
     description: "GPA: 6.0/6.0",
     categories: ["ai", "bio", "education", "research"],
@@ -52,7 +53,7 @@ export const projects: Project[] = [
     id: "project5",
     title: "AI/ML Engineer",
     subtitle: "Lightcast Discovery",
-    description: "Computer Vision; cell behaviour detection.",
+    description: "Computer Vision; Image-based cellular characterisation.",
     categories: ["ai", "bio"],
     imageUrl: "/images/lightcast.jpg",
     link: "https://www.lightcast.bio/",
@@ -70,7 +71,7 @@ export const projects: Project[] = [
     id: "project7",
     title: "Game Dev Intern",
     subtitle: "ENS Paris",
-    description: "",
+    description: "Developed a game to investigate the perception of pitch and conducted studies with participants in French.",
     categories: ["ai", "research"],
     imageUrl: "/images/ens.jpg",
     link: "https://psl.eu/ecole-normale-superieure-psl",
@@ -79,7 +80,7 @@ export const projects: Project[] = [
     id: "project8",
     title: "VC Analyst",
     subtitle: "InterVest",
-    description: "Analyzing market trends and investment opportunities in the biotech sector.",
+    description: "Researched value estimations of biotech startups and critically evaluated scientific evidence to support investment decisions.",
     categories: ["impact"],
     imageUrl: "/images/intervest.jpg",
     link: "https://intervest.co.kr/",
@@ -88,7 +89,7 @@ export const projects: Project[] = [
     id: "project9",
     title: "Stem Cell Engineering Intern",
     subtitle: "MediPost",
-    description: "Stem cell applications for regenerative medicine.",
+    description: "Conducted research within the Alzheimer's R&D team.",
     categories: ["bio", "research"],
     imageUrl: "/images/medipost.jpg",
     link: "https://en.medi-post.co.kr/",
@@ -97,7 +98,7 @@ export const projects: Project[] = [
     id: "project10",
     title: "Project Officer",
     subtitle: "Cambridge University AI",
-    description: "",
+    description: "Organised industry partnerships, projects and internships that connected Cambridge students better with the wider AI ecosystem.",
     categories: ["ai", "impact"],
     imageUrl: "/images/cuai.jpg",
     link: "https://www.cuai.org.uk/",
@@ -134,7 +135,7 @@ export const projects: Project[] = [
     id: "project14",
     title: "Chef",
     subtitle: "Sollip",
-    description: "A Korean-French fusion Michelin star restaurant.",
+    description: "A London-based Korean-French fusion one Michelin star restaurant.",
     categories: ["events"],
     imageUrl: "/images/sollip.jpg",
     link: "https://www.sollip.co.uk/",

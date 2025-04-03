@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { CategoryFilter } from "@/components/category-filter"
-import { ProjectCarousel } from "@/components/project-carousel"
+import { ProjectGrid } from "@/components/project-grid"
 import { projects, type ProjectCategory } from "@/data/projects"
 
 // Add import for the ArrowLeft icon and Link component
@@ -50,10 +50,8 @@ export default function ProjectsPage() {
           <CategoryFilter onCategoriesChange={setSelectedCategories} />
         </div>
 
-        {/* Projects carousel */}
-        <div className="w-full">
-          <ProjectCarousel projects={filteredProjects} />
-        </div>
+        {/* Projects grid */}
+        <ProjectGrid projects={filteredProjects} />
       </div>
     </div>
   )
