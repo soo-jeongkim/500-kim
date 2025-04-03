@@ -80,7 +80,7 @@ export const projects: Project[] = [
     id: "project8",
     title: "VC Analyst",
     subtitle: "InterVest",
-    description: "Researched value estimations of biotech startups and critically evaluated scientific evidence to support investment decisions.",
+    description: "Researched value estimations of biotech startups and evaluated scientific evidence to support investment decisions.",
     categories: ["impact"],
     imageUrl: "/images/intervest.jpg",
     link: "https://intervest.co.kr/",
@@ -139,6 +139,15 @@ export const projects: Project[] = [
     categories: ["events"],
     imageUrl: "/images/sollip.jpg",
     link: "https://www.sollip.co.uk/",
+  },
+  {
+    id: "project15",
+    title: "Documentary Productions",
+    subtitle: "Pioneer Productions",
+    description: "Helped bring the Korea story to life as part of the Mother Undercover (Hulu) production team.",
+    categories: ["events"],
+    imageUrl: "/images/sollip.jpg",
+    link: "https://pioneertv.com/programmes/mother-undercover-hulu/",
   },
 ]
 
