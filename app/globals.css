@@ -96,70 +96,70 @@
     background-color: rgb(243 244 246 / 0.3);
   }
   .dark .border-gray-300\/50 {
-    @apply border-gray-300/50;
+    border-color: rgb(209 213 219 / 0.5);
   }
   .dark .bg-gray-100\/50 {
-    @apply bg-gray-100/50;
+    background-color: rgb(243 244 246 / 0.5);
   }
 
   .dark .bg-blue-100\/30 {
-    @apply bg-blue-100/30;
+    background-color: rgb(219 234 254 / 0.3);
   }
   .dark .border-blue-300\/60 {
-    @apply border-blue-300/60;
+    border-color: rgb(147 197 253 / 0.6);
   }
   .dark .bg-blue-100\/50 {
-    @apply bg-blue-100/50;
+    background-color: rgb(219 234 254 / 0.5);
   }
 
   .dark .bg-green-100\/30 {
-    @apply bg-green-100/30;
+    background-color: rgb(220 252 231 / 0.3);
   }
   .dark .border-green-300\/60 {
-    @apply border-green-300/60;
+    border-color: rgb(134 239 172 / 0.6);
   }
   .dark .bg-green-100\/50 {
-    @apply bg-green-100/50;
+    background-color: rgb(220 252 231 / 0.5);
   }
 
   .dark .bg-purple-100\/30 {
-    @apply bg-purple-100/30;
+    background-color: rgb(243 232 255 / 0.3);
   }
   .dark .border-purple-300\/60 {
-    @apply border-purple-300/60;
+    border-color: rgb(216 180 254 / 0.6);
   }
   .dark .bg-purple-100\/50 {
-    @apply bg-purple-100/50;
+    background-color: rgb(243 232 255 / 0.5);
   }
 
   .dark .bg-teal-100\/30 {
-    @apply bg-teal-100/30;
+    background-color: rgb(204 251 241 / 0.3);
   }
   .dark .border-teal-300\/60 {
-    @apply border-teal-300/60;
+    border-color: rgb(94 234 212 / 0.6);
   }
   .dark .bg-teal-100\/50 {
-    @apply bg-teal-100/50;
+    background-color: rgb(204 251 241 / 0.5);
   }
 
   .dark .bg-amber-100\/30 {
-    @apply bg-amber-100/30;
+    background-color: rgb(254 243 199 / 0.3);
   }
   .dark .border-amber-300\/60 {
-    @apply border-amber-300/60;
+    border-color: rgb(252 211 77 / 0.6);
   }
   .dark .bg-amber-100\/50 {
-    @apply bg-amber-100/50;
+    background-color: rgb(254 243 199 / 0.5);
   }
 
   .dark .bg-pink-100\/30 {
-    @apply bg-pink-100/30;
+    background-color: rgb(252 231 243 / 0.3);
   }
   .dark .border-pink-300\/60 {
-    @apply border-pink-300/60;
+    border-color: rgb(249 168 212 / 0.6);
   }
   .dark .bg-pink-100\/50 {
-    @apply bg-pink-100/50;
+    background-color: rgb(252 231 243 / 0.5);
   }
 }
 
