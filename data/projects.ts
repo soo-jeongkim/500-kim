@@ -144,7 +144,7 @@ export const projects: Project[] = [
     id: "project15",
     title: "Documentary Productions",
     subtitle: "Pioneer Productions",
-    description: "Helped bring the Korea story to life as part of the Mother Undercover (Hulu) production team.",
+    description: "Helped bring the Korea story to life as part of the Mother Undercover (Hulu US / Disney+ UK) team.",
     categories: ["impact", "events"],
     imageUrl: "/images/sollip.jpg",
     link: "https://pioneertv.com/programmes/mother-undercover-hulu/",
