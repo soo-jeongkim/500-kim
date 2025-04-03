@@ -93,7 +93,7 @@
 
   /* Preserve colors in dark mode for category buttons */
   .dark .bg-gray-100\/30 {
-    @apply bg-gray-100/30;
+    background-color: rgb(243 244 246 / 0.3);
   }
   .dark .border-gray-300\/50 {
     @apply border-gray-300/50;
