@@ -17,7 +17,7 @@ export const projects: Project[] = [
     id: "project1",
     title: "PhD AI in Biology",
     subtitle: "University of Cambridge, EMBL-EBI",
-    description: "Language modelling; Diffusion modelling; Protein Design; Contrastive Learning.",
+    description: "Protein Language Models; Genomic Language Models; Sequence Design; Cancer Immunotherapy; Cancer Genomics.",
     categories: ["ai", "bio", "research", "education"],
     imageUrl: "/images/phd.jpg",
     link: "https://www.ebi.ac.uk/",
