@@ -26,7 +26,7 @@ export const projects: Project[] = [
     id: "project2",
     title: "MPhil Engineering",
     subtitle: "University of Cambridge",
-    description: "Biomedical & Information Division. Computer vision; GNNs; Motion analysis.",
+    description: "Biomedical & Information Division. Computer vision; GNNs; Motion detection.",
     categories: ["ai", "bio", "research", "education"],
     imageUrl: "/images/mphil.jpg",
     link: "https://www.eng.cam.ac.uk/",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
   },
   {
     id: "project4",
-    title: "Exchange, Bioengineering",
+    title: "Exchange, Engineering",
     subtitle: "ETH Zurich",
     description: "GPA: 6.0/6.0",
     categories: ["ai", "bio", "education", "research"],
