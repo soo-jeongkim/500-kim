@@ -12,6 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <title>Soo Kim</title>
+        <link rel="icon" href="🪩" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" disableSystemTheme>
           {children}
@@ -21,10 +25,9 @@ export default function RootLayout({
   )
 }
 
-
-
 import './globals.css'
 
 export const metadata = {
-      generator: 'v0.dev'
-    };
+  title: 'Soo Kim',  // This will appear in the browser tab
+  icons: '🪩'       // This will be the favicon
+}
