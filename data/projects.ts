@@ -62,7 +62,7 @@ export const projects: Project[] = [
     id: "project6",
     title: "ML Engineer Intern",
     subtitle: "dRisk.ai",
-    description: "Reinforcement Learning; AVs; Graphs.",
+    description: "Reinforcement Learning; Computer Vision; Edge case handling for autonomous driving.",
     categories: ["ai"],
     imageUrl: "/images/drisk.jpg",
     link: "https://drisk.ai/",
