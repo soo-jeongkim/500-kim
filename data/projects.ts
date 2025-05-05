@@ -120,7 +120,7 @@ export const projects: Project[] = [
       "Fundraising for Arctic indigenous communities to travel globally for representation at the United Nations.",
     categories: ["impact"],
     imageUrl: "/images/arctic.jpg",
-    link: "#",
+    link: "https://www.pacificenvironment.org/",
   },
   {
     id: "project13",
