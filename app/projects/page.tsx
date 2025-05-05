@@ -52,6 +52,16 @@ export default function ProjectsPage() {
 
         {/* Projects grid */}
         <ProjectGrid projects={filteredProjects} />
+
+        {/* New CV link */}
+        <div className="text-center mt-12 mb-8">
+          <a 
+            href="/CV_SJK_MAY_2024_.pdf" 
+            className="text-gray-600 dark:text-gray-400 hover:underline"
+          >
+            ...or have a look at my CV
+          </a>
+        </div>
       </div>
     </div>
   )
