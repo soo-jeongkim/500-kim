@@ -115,7 +115,7 @@ export const projects: Project[] = [
   {
     id: "project12",
     title: "Ambassador",
-    subtitle: "Arctic",
+    subtitle: "Pacific Environment",
     description:
       "Fundraising for Arctic indigenous communities to travel globally for representation at the United Nations.",
     categories: ["impact"],
