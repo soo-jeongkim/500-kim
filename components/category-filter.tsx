@@ -55,47 +55,51 @@ export function CategoryFilter({ onCategoriesChange }: CategoryFilterProps) {
   }
 
   return (
-    <div className="flex items-center justify-center space-x-3">
-      <button
-        onClick={handleAllClick}
-        className={`relative px-5 py-1.5 rounded-full transition-all duration-200 border-[2px]
-          ${
-            showAll
-              ? `font-medium ${categoryColors.all.activeBg} shadow-sm border-gray-300/50 text-foreground`
-              : "bg-gray-100/10 border-gray-200/30 text-gray-400 hover:text-muted-foreground hover:shadow-sm"
-          }`}
-      >
-        All
-      </button>
+    <div className="md:flex md:items-center md:justify-center md:space-x-3
+                    overflow-x-auto md:overflow-visible 
+                    pb-2 -mb-2 md:pb-0 md:mb-0">
+      <div className="flex items-center space-x-3 min-w-max px-4 md:px-0 md:min-w-0">
+        <button
+          onClick={handleAllClick}
+          className={`relative px-5 py-1.5 rounded-full transition-all duration-200 border-[2px]
+            ${
+              showAll
+                ? `font-medium ${categoryColors.all.activeBg} shadow-sm border-gray-300/50 text-foreground`
+                : "bg-gray-100/10 border-gray-200/30 text-gray-400 hover:text-muted-foreground hover:shadow-sm"
+            }`}
+        >
+          All
+        </button>
 
-      <div className="text-muted-foreground/50 font-light">|</div>
+        <div className="text-muted-foreground/50 font-light">|</div>
 
-      {[
-        { id: "research", label: "💻 Research" },
-        { id: "bio", label: "🧬 Bio" },
-        { id: "ai", label: "🤖 AI" },
-        { id: "impact", label: "🌐 Impact" },
-        { id: "education", label: "🎓 Education" },
-        { id: "events", label: "🪩 Events" },
-      ].map((category) => {
-        const colors = categoryColors[category.id]
-        const isActive = selectedCategories.includes(category.id as Category)
+        {[
+          { id: "research", label: "💻 Research" },
+          { id: "bio", label: "🧬 Bio" },
+          { id: "ai", label: "🤖 AI" },
+          { id: "impact", label: "🌐 Impact" },
+          { id: "education", label: "🎓 Education" },
+          { id: "events", label: "🪩 Events" },
+        ].map((category) => {
+          const colors = categoryColors[category.id]
+          const isActive = selectedCategories.includes(category.id as Category)
 
-        return (
-          <button
-            key={category.id}
-            onClick={() => handleCategoryToggle(category.id as Category)}
-            className={`relative px-5 py-1.5 rounded-full transition-all duration-200 border-[2px]
-              ${
-                isActive
-                  ? `text-foreground font-medium ${colors.activeBg} ${colors.border} shadow-sm transform scale-105`
-                  : "bg-gray-100/10 border-gray-200/30 text-gray-400 hover:text-muted-foreground hover:shadow-sm hover:scale-105"
-              }`}
-          >
-            {category.label}
-          </button>
-        )
-      })}
+          return (
+            <button
+              key={category.id}
+              onClick={() => handleCategoryToggle(category.id as Category)}
+              className={`relative px-5 py-1.5 rounded-full transition-all duration-200 border-[2px]
+                ${
+                  isActive
+                    ? `text-foreground font-medium ${colors.activeBg} ${colors.border} shadow-sm transform scale-105`
+                    : "bg-gray-100/10 border-gray-200/30 text-gray-400 hover:text-muted-foreground hover:shadow-sm hover:scale-105"
+                }`}
+            >
+              {category.label}
+            </button>
+          )
+        })}
+      </div>
     </div>
   )
 }

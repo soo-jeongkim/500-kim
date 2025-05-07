@@ -25,7 +25,7 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-background relative">
       {/* Back button in top left corner */}
-      <div className="absolute top-8 left-8">
+      <div className="absolute md:fixed top-8 left-8 z-20">
         <Link
           href="/"
           className="flex items-center justify-center w-9 h-9 rounded-full bg-background/80 backdrop-blur-sm border border-border/40 shadow-sm text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110"
@@ -35,18 +35,21 @@ export default function ProjectsPage() {
         </Link>
       </div>
 
-      {/* Only theme toggle in top right corner */}
-      <div className="absolute top-8 right-8">
+      {/* Theme toggle in top right corner */}
+      <div className="absolute md:fixed top-8 right-8 z-20">
         <ThemeToggle />
       </div>
 
       {/* Content */}
-      <div className="flex flex-col items-center pt-16 px-4 pb-16 max-w-7xl mx-auto">
+      <div className="flex flex-col items-center pt-16 px-4 pb-32 md:pb-16 max-w-7xl mx-auto">
         {/* Heading at the top - updated text without emoji */}
         <h1 className="text-2xl font-medium mb-12 mt-8">what i've been doing</h1>
 
-        {/* Category filter */}
-        <div className="mb-12">
+        {/* Category filter - sticky only on mobile */}
+        <div className="sticky md:static top-0 z-10 w-full md:w-auto 
+                      bg-background/80 md:bg-transparent 
+                      backdrop-blur-md md:backdrop-blur-none 
+                      py-4 -mx-4 px-4 md:mx-0 md:px-0 md:py-0">
           <CategoryFilter onCategoriesChange={setSelectedCategories} />
         </div>
 
