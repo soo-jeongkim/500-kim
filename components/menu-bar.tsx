@@ -89,15 +89,17 @@ export function MenuBar() {
 
   return (
     <motion.nav
-      className="px-6 py-2 rounded-2xl bg-gradient-to-b from-background/80 to-background/40 backdrop-blur-lg border border-border/40 shadow-lg relative overflow-hidden 
-      min-w-[420px]
+      className="px-3 py-2 rounded-2xl bg-gradient-to-b from-background/80 to-background/40 backdrop-blur-lg border border-border/40 shadow-lg relative overflow-visible 
+      w-auto
+      min-w-[64px]
       md:min-w-[420px] 
       fixed 
       bottom-4 
       right-4
       md:relative 
       md:bottom-auto 
-      md:right-auto"
+      md:right-auto
+      md:px-6"
       initial="initial"
       whileHover="hover"
     >
@@ -131,7 +133,7 @@ export function MenuBar() {
                 href={item.href}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
                 rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-2 px-4 py-2 relative z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl
+                className="flex items-center gap-2 px-2 md:px-4 py-2 relative z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl
                 md:flex-row flex-row-reverse justify-end"
                 variants={itemVariants}
                 transition={sharedTransition}
@@ -140,7 +142,7 @@ export function MenuBar() {
                 <span className={`transition-colors duration-300 group-hover:${item.iconColor} text-foreground`}>
                   {item.icon}
                 </span>
-                <span className="min-w-[90px] text-left md:text-left text-right md:ml-0 mr-2">
+                <span className="absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 md:opacity-100 md:static md:mr-0 md:min-w-[90px] md:text-left">
                   {language === "EN" ? item.labelEN : item.labelKR}
                 </span>
               </motion.a>
@@ -148,7 +150,7 @@ export function MenuBar() {
                 href={item.href}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
                 rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-2 px-4 py-2 absolute inset-0 z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl
+                className="flex items-center gap-2 px-2 md:px-4 py-2 absolute inset-0 z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl
                 md:flex-row flex-row-reverse justify-end"
                 variants={backVariants}
                 transition={sharedTransition}
@@ -157,7 +159,7 @@ export function MenuBar() {
                 <span className={`transition-colors duration-300 group-hover:${item.iconColor} text-foreground`}>
                   {item.icon}
                 </span>
-                <span className="min-w-[90px] text-left md:text-left text-right md:ml-0 mr-2">
+                <span className="absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 md:opacity-100 md:static md:mr-0 md:min-w-[90px] md:text-left">
                   {language === "EN" ? item.labelEN : item.labelKR}
                 </span>
               </motion.a>
