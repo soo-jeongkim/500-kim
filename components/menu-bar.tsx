@@ -91,7 +91,7 @@ export function MenuBar() {
     <motion.nav
       className="px-3 py-2 rounded-2xl bg-gradient-to-b from-background/80 to-background/40 backdrop-blur-lg border border-border/40 shadow-lg relative overflow-visible 
       w-auto
-      min-w-[64px]
+      min-w-[200px]
       md:min-w-[420px] 
       fixed 
       bottom-[20px]
@@ -100,8 +100,7 @@ export function MenuBar() {
       md:bottom-auto 
       md:right-auto
       md:px-6
-      translate-y-0
-      "
+      translate-y-0"
       initial="initial"
       whileHover="hover"
     >
@@ -113,7 +112,7 @@ export function MenuBar() {
         } to-transparent rounded-3xl z-0 pointer-events-none`}
         variants={navGlowVariants}
       />
-      <ul className="flex md:flex-row flex-col items-center gap-4 relative z-10">
+      <ul className="flex flex-row justify-between items-center gap-4 relative z-10">
         {menuItems.map((item) => (
           <motion.li key={language === "EN" ? item.labelEN : item.labelKR} className="relative">
             <motion.div
@@ -135,8 +134,7 @@ export function MenuBar() {
                 href={item.href}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
                 rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-2 px-2 md:px-4 py-2 relative z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl
-                md:flex-row flex-row-reverse justify-end"
+                className="flex items-center justify-center px-2 py-2 relative z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl"
                 variants={itemVariants}
                 transition={sharedTransition}
                 style={{ transformStyle: "preserve-3d", transformOrigin: "center bottom" }}
@@ -152,8 +150,7 @@ export function MenuBar() {
                 href={item.href}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
                 rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-2 px-2 md:px-4 py-2 absolute inset-0 z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl
-                md:flex-row flex-row-reverse justify-end"
+                className="flex items-center justify-center px-2 py-2 absolute inset-0 z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl"
                 variants={backVariants}
                 transition={sharedTransition}
                 style={{ transformStyle: "preserve-3d", transformOrigin: "center top", rotateX: 90 }}
