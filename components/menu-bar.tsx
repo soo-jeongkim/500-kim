@@ -94,12 +94,14 @@ export function MenuBar() {
       min-w-[64px]
       md:min-w-[420px] 
       fixed 
-      bottom-4 
+      bottom-[20px]
       right-4
       md:relative 
       md:bottom-auto 
       md:right-auto
-      md:px-6"
+      md:px-6
+      translate-y-0
+      "
       initial="initial"
       whileHover="hover"
     >
