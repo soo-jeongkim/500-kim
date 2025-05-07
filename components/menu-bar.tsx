@@ -147,7 +147,7 @@ export function MenuBar() {
                 <span className={`transition-colors duration-300 group-hover:${item.iconColor} text-foreground`}>
                   {item.icon}
                 </span>
-                <span className="absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 md:opacity-100 md:static md:mr-0 md:min-w-[90px] md:text-left">
+                <span className="hidden md:block md:ml-2 md:min-w-[90px] md:text-left">
                   {language === "EN" ? item.labelEN : item.labelKR}
                 </span>
               </motion.a>
@@ -163,7 +163,7 @@ export function MenuBar() {
                 <span className={`transition-colors duration-300 group-hover:${item.iconColor} text-foreground`}>
                   {item.icon}
                 </span>
-                <span className="absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 md:opacity-100 md:static md:mr-0 md:min-w-[90px] md:text-left">
+                <span className="hidden md:block md:ml-2 md:min-w-[90px] md:text-left">
                   {language === "EN" ? item.labelEN : item.labelKR}
                 </span>
               </motion.a>
