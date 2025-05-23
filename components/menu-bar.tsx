@@ -56,7 +56,7 @@ const glowVariants = {
   initial: { opacity: 0, scale: 0.8 },
   hover: {
     opacity: 1,
-    scale: 2,
+    scale: 1.5,
     transition: {
       opacity: { duration: 0.5, ease: [0.4, 0, 0.2, 1] },
       scale: { duration: 0.5, type: "spring", stiffness: 300, damping: 25 },
@@ -133,6 +133,7 @@ export function MenuBar() {
                   background: item.gradient,
                   opacity: 0,
                   borderRadius: "16px",
+                  transformOrigin: "center",
                 }}
               />
               <motion.a
