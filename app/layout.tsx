@@ -5,6 +5,19 @@ import type React from "react" // Added import for React
 
 const inter = Inter({ subsets: ["latin"] })
 
+export const metadata = {
+  title: "Soo Kim",
+  description: "Personal website of Soo Kim",
+  icons: {
+    icon: [
+      {
+        url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪩</text></svg>",
+        type: "image/svg+xml",
+      },
+    ],
+  },
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -24,7 +37,3 @@ export default function RootLayout({
 
 
 import './globals.css'
-
-export const metadata = {
-      generator: 'v0.dev'
-    };
