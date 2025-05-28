@@ -49,7 +49,8 @@ export default function ProjectsPage() {
         <div className="sticky md:static top-0 z-10 w-full md:w-auto 
                       bg-background/80 md:bg-transparent 
                       backdrop-blur-md md:backdrop-blur-none 
-                      py-4 -mx-4 px-4 md:mx-0 md:px-0 md:py-0">
+                      py-4 -mx-4 px-4 md:mx-0 md:px-0 md:py-0
+                      mb-8">
           <CategoryFilter onCategoriesChange={setSelectedCategories} />
         </div>
 
