@@ -30,27 +30,28 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="fixed inset-0 z-50 flex items-center justify-center"
+            className="fixed inset-0 z-50 flex items-center justify-center py-8"
           >
-            <div className="w-[90%] max-w-2xl h-full bg-background shadow-lg overflow-hidden flex flex-col">
-              <div className="p-6 flex-shrink-0">
-                <button
-                  onClick={onClose}
-                  className="absolute right-4 top-4 rounded-full p-2 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
-                >
-                  <X className="h-4 w-4" />
-                </button>
-                
-                <div className="space-y-4">
-                  <h2 className="text-2xl font-semibold">{project.title}</h2>
-                  {project.subtitle && (
-                    <p className="text-muted-foreground">{project.subtitle}</p>
-                  )}
-                  <p className="text-foreground/80">{project.description}</p>
+            <div className="w-[90%] max-w-2xl h-[calc(100%-4rem)] bg-background shadow-lg overflow-hidden flex flex-col rounded-2xl border">
+              <div className="p-6 flex-shrink-0 border-b">
+                <div className="flex justify-between items-start">
+                  <div className="space-y-4">
+                    <h2 className="text-2xl font-semibold">{project.title}</h2>
+                    {project.subtitle && (
+                      <p className="text-muted-foreground">{project.subtitle}</p>
+                    )}
+                    <p className="text-foreground/80">{project.description}</p>
+                  </div>
+                  <button
+                    onClick={onClose}
+                    className="rounded-full p-2 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors border border-border/40 hover:border-border/60"
+                  >
+                    <X className="h-5 w-5" />
+                  </button>
                 </div>
               </div>
               
-              <div className="flex-1 overflow-y-auto p-6 pt-0">
+              <div className="flex-1 overflow-y-auto p-6">
                 {/* We'll add more content here later */}
               </div>
             </div>
