@@ -19,13 +19,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <ProjectCard
-              title={project.title}
-              subtitle={project.subtitle}
-              description={project.description}
-              categories={project.categories}
-              link={project.link}
-            />
+            <ProjectCard project={project} />
           </motion.div>
         ))}
       </div>
