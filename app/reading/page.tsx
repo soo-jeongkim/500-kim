@@ -32,7 +32,7 @@ export default function ReadingPage() {
         <div className="text-center">
           <p className="text-lg mb-4">check out my goodreads</p>
           <a 
-            href="https://www.goodreads.com/user/show/123456789-soo-jeong-kim" 
+            href="https://www.goodreads.com/user/show/147037822-soo-kim" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline inline-flex items-center"
