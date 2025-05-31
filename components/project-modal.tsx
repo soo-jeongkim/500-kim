@@ -14,14 +14,14 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
+        <div className="fixed inset-0 z-50">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50"
+            className="fixed inset-0 bg-background/80 backdrop-blur-sm"
           />
           
           {/* Modal */}
@@ -30,7 +30,8 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="fixed inset-0 z-50 flex items-center justify-center py-8"
+            className="fixed inset-0 flex items-center justify-center py-8"
+            onClick={(e) => e.stopPropagation()}
           >
             <div className="w-[90%] max-w-2xl h-[calc(100%-4rem)] bg-background shadow-lg overflow-hidden flex flex-col rounded-2xl border">
               <div className="p-6 flex-shrink-0 border-b">
@@ -56,7 +57,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
               </div>
             </div>
           </motion.div>
-        </>
+        </div>
       )}
     </AnimatePresence>
   )
