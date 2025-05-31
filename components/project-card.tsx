@@ -2,101 +2,52 @@
 
 import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
-import type { ProjectCategory } from "@/data/projects"
+import { Project } from "@/data/projects"
+import { categoryInfo } from "@/lib/category-info"
+import { useState } from "react"
+import { ProjectModal } from "./project-modal"
 
 interface ProjectCardProps {
-  title: string
-  subtitle?: string
-  description: string
-  categories: ProjectCategory[]
-  link?: string
+  project: Project
 }
 
-export function ProjectCard({ title, subtitle, description, categories, link }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
   const { theme } = useTheme()
   const isDarkTheme = theme === "dark"
-
-  // Map categories to emoji, display name, and colors
-  const categoryInfo: Record<
-    ProjectCategory,
-    {
-      emoji: string
-      displayName: string
-      bg: string
-      border: string
-    }
-  > = {
-    research: {
-      emoji: "💻",
-      displayName: "Research",
-      bg: "bg-blue-100/30",
-      border: "border-blue-300/60",
-    },
-    bio: {
-      emoji: "🧬",
-      displayName: "Bio",
-      bg: "bg-green-100/30",
-      border: "border-green-300/60",
-    },
-    ai: {
-      emoji: "🤖",
-      displayName: "AI",
-      bg: "bg-purple-100/30",
-      border: "border-purple-300/60",
-    },
-    impact: {
-      emoji: "🌐",
-      displayName: "Impact",
-      bg: "bg-teal-100/30",
-      border: "border-teal-300/60",
-    },
-    education: {
-      emoji: "🎓",
-      displayName: "Education",
-      bg: "bg-amber-100/30",
-      border: "border-amber-300/60",
-    },
-    events: {
-      emoji: "🪩",
-      displayName: "Events",
-      bg: "bg-pink-100/30",
-      border: "border-pink-300/60",
-    },
-  }
+  const { title, subtitle, description, categories, link } = project
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <motion.div
-      className="relative rounded-2xl bg-gradient-to-b from-background/95 to-background/80 backdrop-blur-lg border border-border/40 shadow-lg overflow-hidden h-[250px] flex flex-col w-full
-      dark:from-background/90 dark:to-background/70 dark:border-border/30 dark:shadow-[0_4px_12px_rgba(0,0,0,0.3)]"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      whileHover={{ y: -5, transition: { duration: 0.2 } }}
-    >
-      <div className="p-6 flex flex-col flex-grow">
-        <div className="flex flex-wrap gap-1 mb-2">
-          {categories.map((category) => {
-            const info = categoryInfo[category]
-            return (
-              <span
-                key={category}
-                className={`text-xs font-medium px-2 py-1 rounded-full border-[1.5px] ${info.bg} ${info.border}
-                dark:bg-opacity-20 dark:border-opacity-40`}
-              >
-                {info.emoji} {info.displayName}
-              </span>
-            )
-          })}
-        </div>
-        <h3 className="text-xl font-semibold mb-1 dark:text-foreground/90">{title}</h3>
-        {subtitle && <p className="text-sm text-muted-foreground mb-2 dark:text-foreground/70">{subtitle}</p>}
-        <p className="text-muted-foreground text-sm flex-grow line-clamp-3 dark:text-foreground/80">{description}</p>
+    <>
+      <motion.div
+        className="relative rounded-2xl bg-gradient-to-b from-background/95 to-background/80 backdrop-blur-lg border border-border/40 shadow-lg overflow-hidden h-[250px] flex flex-col w-full
+        dark:from-background/90 dark:to-background/70 dark:border-border/30 dark:shadow-[0_4px_12px_rgba(0,0,0,0.3)]"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        whileHover={{ y: -5, transition: { duration: 0.2 } }}
+      >
+        <div className="p-6 flex flex-col flex-grow">
+          <div className="flex flex-wrap gap-1 mb-2">
+            {categories.map((category) => {
+              const info = categoryInfo[category]
+              return (
+                <span
+                  key={category}
+                  className={`text-xs font-medium px-2 py-1 rounded-full border-[1.5px] ${info.bg} ${info.border}
+                  dark:bg-opacity-20 dark:border-opacity-40`}
+                >
+                  {info.emoji} {info.displayName}
+                </span>
+              )
+            })}
+          </div>
+          <h3 className="text-xl font-semibold mb-1 dark:text-foreground/90">{title}</h3>
+          {subtitle && <p className="text-sm text-muted-foreground mb-2 dark:text-foreground/70">{subtitle}</p>}
+          <p className="text-muted-foreground text-sm flex-grow line-clamp-3 dark:text-foreground/80">{description}</p>
 
-        {link && (
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setIsModalOpen(true)}
             className="mt-4 text-sm font-medium text-primary hover:underline inline-flex items-center
             dark:text-primary/90 dark:hover:text-primary"
           >
@@ -110,18 +61,24 @@ export function ProjectCard({ title, subtitle, description, categories, link }: 
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
-          </a>
-        )}
-      </div>
+          </button>
+        </div>
 
-      <div
-        className={`absolute inset-0 -z-10 opacity-0 hover:opacity-10 transition-opacity duration-300 bg-gradient-radial from-transparent ${
-          isDarkTheme
-            ? "via-blue-400/20 via-30% via-purple-400/20 via-60% via-red-400/20 via-90%"
-            : "via-blue-400/20 via-30% via-purple-400/20 via-60% via-red-400/20 via-90%"
-        } to-transparent rounded-2xl pointer-events-none`}
+        <div
+          className={`absolute inset-0 -z-10 opacity-0 hover:opacity-10 transition-opacity duration-300 bg-gradient-radial from-transparent ${
+            isDarkTheme
+              ? "via-blue-400/20 via-30% via-purple-400/20 via-60% via-red-400/20 via-90%"
+              : "via-blue-400/20 via-30% via-purple-400/20 via-60% via-red-400/20 via-90%"
+          } to-transparent rounded-2xl pointer-events-none`}
+        />
+      </motion.div>
+
+      <ProjectModal 
+        project={project}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       />
-    </motion.div>
+    </>
   )
 }
 
