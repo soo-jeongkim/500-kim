@@ -6,6 +6,7 @@ import { Project } from "@/data/projects"
 import { categoryInfo } from "@/lib/category-info"
 import { useState } from "react"
 import { ProjectModal } from "./project-modal"
+import { Star } from "lucide-react"
 
 interface ProjectCardProps {
   project: Project
@@ -16,6 +17,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const isDarkTheme = theme === "dark"
   const { title, subtitle, description, categories, link } = project
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const isPhD = project.id === "project1" // Check if this is the PhD project
 
   return (
     <>
@@ -42,7 +44,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
               )
             })}
           </div>
-          <h3 className="text-xl font-semibold mb-1 dark:text-foreground/90">{title}</h3>
+          <div className="flex items-center gap-2">
+            <h3 className="text-xl font-semibold dark:text-foreground/90">{title}</h3>
+            {isPhD && (
+              <Star className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+            )}
+          </div>
           {subtitle && <p className="text-sm text-muted-foreground mb-2 dark:text-foreground/70">{subtitle}</p>}
           <p className="text-muted-foreground text-sm flex-grow line-clamp-3 dark:text-foreground/80">{description}</p>
 
