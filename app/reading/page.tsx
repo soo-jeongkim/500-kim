@@ -30,24 +30,17 @@ export default function ReadingPage() {
 
         {/* Goodreads section */}
         <div className="text-center">
-          <p className="text-lg mb-4">check out my goodreads</p>
-          <a 
-            href="https://www.goodreads.com/user/show/147037822-soo-kim" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:underline inline-flex items-center"
-          >
-            Visit my Goodreads profile
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <p className="text-lg mb-4">
+            check out my{" "}
+            <a 
+              href="https://www.goodreads.com/user/show/147037822-soo-kim" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
+              goodreads
+            </a>
+          </p>
         </div>
       </div>
     </div>
