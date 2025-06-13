@@ -24,12 +24,12 @@ export default function ReadingPage() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col items-start pt-16 px-4 pb-32 md:pb-16 max-w-7xl mx-auto">
+      <div className="flex flex-col items-start pt-16 px-8 pb-32 md:pb-16 max-w-7xl mx-auto">
         {/* Heading at the top */}
         <h1 className="text-2xl font-medium mb-12 mt-8 w-full text-center">what i've been reading</h1>
 
         {/* Content section */}
-        <div className="w-full">
+        <div className="w-full px-4">
           <p className="text-lg mb-4">
             these are some of my favourite books :)
           </p>
