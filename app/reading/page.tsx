@@ -24,13 +24,16 @@ export default function ReadingPage() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col items-center pt-16 px-4 pb-32 md:pb-16 max-w-7xl mx-auto">
+      <div className="flex flex-col items-start pt-16 px-4 pb-32 md:pb-16 max-w-7xl mx-auto">
         {/* Heading at the top */}
-        <h1 className="text-2xl font-medium mb-12 mt-8">what i've been reading</h1>
+        <h1 className="text-2xl font-medium mb-12 mt-8 w-full text-center">what i've been reading</h1>
 
-        {/* Goodreads section */}
-        <div className="text-center">
+        {/* Content section */}
+        <div className="w-full">
           <p className="text-lg mb-4">
+            these are some of my favourite books :)
+          </p>
+          <p className="text-lg">
             check out my{" "}
             <a 
               href="https://www.goodreads.com/user/show/147037822-soo-kim" 
