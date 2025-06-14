@@ -61,8 +61,8 @@ export default function ReadingPage() {
             <img src="/books/feelfree.jpg" alt="Feel Free by Zadie Smith" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
             <img src="/books/educated.jpg" alt="Educated by Tara Westover" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
             <img src="/books/The Unabridged Journals of Sylvia Plath .jpg" alt="The Unabridged Journals of Sylvia Plath" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
-            <img src="/books/giovanni's room.jpg" alt="Giovanni's Room by James Baldwin" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
-            <img src="/books/tell me when the train's been gone.webp" alt="Tell Me When the Train's Been Gone" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
+            <img src="/books/giovannis room.jpg" alt="Giovanni's Room by James Baldwin" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
+            <img src="/books/tell me when the trains been gone.webp" alt="Tell Me When the Train's Been Gone" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
             <img src="/books/whenbreath.jpg" alt="When Breath Becomes Air" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
             <img src="/books/men we reaped.jpg" alt="Men We Reaped" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
             <img src="/books/pachinko.jpg" alt="Pachinko" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
