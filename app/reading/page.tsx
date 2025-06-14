@@ -58,7 +58,7 @@ export default function ReadingPage() {
                     id={category.id}
                     checked={selectedCategories.includes(category.id)}
                     onChange={() => handleCategoryToggle(category.id)}
-                    className="mt-1.5 h-4 w-4 rounded border-gray-300 text-white bg-white dark:bg-white checked:bg-black dark:checked:bg-black checked:border-black dark:checked:border-white focus:ring-0 focus:ring-offset-0 focus:border-gray-400 cursor-pointer transition-colors duration-200"
+                    className="mt-1.5 h-4 w-4 appearance-none rounded border border-gray-300 bg-white checked:bg-black checked:border-black dark:bg-white dark:checked:bg-black dark:checked:border-white focus:ring-0 focus:ring-offset-0 focus:border-gray-400 cursor-pointer transition-colors duration-200 [background-image:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%201.06-1.06L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200z%22%2F%3E%3C%2Fsvg%3E')] checked:[background-image:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%201.06-1.06L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200z%22%2F%3E%3C%2Fsvg%3E')]"
                   />
                   <label htmlFor={category.id} className="text-lg font-normal cursor-pointer">
                     {category.text}
