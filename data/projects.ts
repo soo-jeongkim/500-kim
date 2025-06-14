@@ -23,15 +23,6 @@ export const projects: Project[] = [
     link: "https://www.ebi.ac.uk/",
   },
   {
-    id: "project16",
-    title: "Y Combinator AI Startup School",
-    subtitle: "Y Combinator",
-    description: "Selected to attend YC's AI Startup School that brings together top AI students and researchers in San Francisco.",
-    categories: ["ai"],
-    imageUrl: "/images/yc.jpg",
-    link: "https://www.ycombinator.com/",
-  },
-  {
     id: "project17",
     title: "AI x Bio \"unconference\"",
     subtitle: "self-organised",
@@ -39,6 +30,15 @@ export const projects: Project[] = [
     categories: ["ai", "bio", "events"],
     imageUrl: "/images/aibio.jpg",
     link: "#",
+  },
+  {
+    id: "project16",
+    title: "Y Combinator AI Startup School",
+    subtitle: "Y Combinator",
+    description: "Selected to attend YC's AI Startup School that brings together top AI students and researchers in San Francisco.",
+    categories: ["ai"],
+    imageUrl: "/images/yc.jpg",
+    link: "https://www.ycombinator.com/",
   },
   {
     id: "project5",
