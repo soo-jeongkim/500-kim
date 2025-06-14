@@ -58,7 +58,7 @@ export default function ReadingPage() {
                     id={category.id}
                     checked={selectedCategories.includes(category.id)}
                     onChange={() => handleCategoryToggle(category.id)}
-                    className="mt-1.5 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                    className="mt-1.5 h-4 w-4 rounded border-gray-300 text-foreground focus:ring-0 focus:ring-offset-0 focus:border-gray-400 cursor-pointer transition-colors duration-200"
                   />
                   <label htmlFor={category.id} className="text-lg font-normal cursor-pointer">
                     {category.text}
