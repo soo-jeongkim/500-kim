@@ -56,6 +56,19 @@ export default function ReadingPage() {
             </div>
           </div>
 
+          <p className="text-lg font-normal mb-8">
+            ... or check out my{" "}
+            <a 
+              href="https://www.goodreads.com/user/show/147037822-soo-kim" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline"
+            >
+              goodreads
+            </a>
+            !
+          </p>
+
           {/* Book covers grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
             <img src="/books/feelfree.jpg" alt="Feel Free by Zadie Smith" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
@@ -80,19 +93,6 @@ export default function ReadingPage() {
             <img src="/books/thealchemist.jpg" alt="The Alchemist" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
             <img src="/books/thelittleprince.jpg" alt="The Little Prince" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
           </div>
-
-          <p className="text-lg font-normal">
-            ... or check out my{" "}
-            <a 
-              href="https://www.goodreads.com/user/show/147037822-soo-kim" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary underline"
-            >
-              goodreads
-            </a>
-            !
-          </p>
         </div>
       </div>
     </div>
