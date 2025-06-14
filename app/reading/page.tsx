@@ -70,7 +70,7 @@ export default function ReadingPage() {
           </p>
 
           {/* Book covers grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
             <img src="/books/feelfree.jpg" alt="Feel Free by Zadie Smith" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
             <img src="/books/educated.jpg" alt="Educated by Tara Westover" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
             <img src="/books/The Unabridged Journals of Sylvia Plath .jpg" alt="The Unabridged Journals of Sylvia Plath" className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow" />
