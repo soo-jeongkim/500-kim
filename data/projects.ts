@@ -32,6 +32,15 @@ export const projects: Project[] = [
     link: "https://www.ycombinator.com/",
   },
   {
+    id: "project17",
+    title: "AI x Bio \"unconference\"",
+    subtitle: "self-organised",
+    description: "bringing together YC AI SUS attendees with key players in the AIxBio scene",
+    categories: ["ai", "bio", "events"],
+    imageUrl: "/images/aibio.jpg",
+    link: "#",
+  },
+  {
     id: "project5",
     title: "AI/ML Engineer",
     subtitle: "Lightcast Discovery",
