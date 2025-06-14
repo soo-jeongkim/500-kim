@@ -88,7 +88,7 @@ export default function ReadingPage() {
                 key={book.id}
                 src={book.image}
                 alt={`${book.title} by ${book.author}`}
-                className="w-full aspect-[2/3] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                className="w-full aspect-[2/3] object-cover shadow-md hover:shadow-lg transition-shadow"
               />
             ))}
           </div>
