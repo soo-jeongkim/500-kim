@@ -61,10 +61,11 @@ export default function ReadingPage() {
               href="https://www.goodreads.com/user/show/147037822-soo-kim" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline"
+              className="text-primary underline"
             >
               goodreads
             </a>
+            !
           </p>
         </div>
       </div>
