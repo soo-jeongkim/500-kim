@@ -30,11 +30,8 @@ export default function ReadingPage() {
 
         {/* Content section */}
         <div className="w-full px-8">
-          <p className="text-lg mb-4">
-            these are some of my favourite books :)
-          </p>
           <p className="text-lg">
-            check out my{" "}
+            these are some of my favourite books :) ... and check out my{" "}
             <a 
               href="https://www.goodreads.com/user/show/147037822-soo-kim" 
               target="_blank"
@@ -43,6 +40,7 @@ export default function ReadingPage() {
             >
               goodreads
             </a>
+            !
           </p>
         </div>
       </div>
