@@ -23,6 +23,15 @@ export const projects: Project[] = [
     link: "https://www.ebi.ac.uk/",
   },
   {
+    id: "project16",
+    title: "Y Combinator AI Startup School",
+    subtitle: "Y Combinator",
+    description: "Selected to attend YC's AI Startup School that brings together top AI students and researchers to learn from leading founders and experts in San Francisco.",
+    categories: ["ai", "education"],
+    imageUrl: "/images/yc.jpg",
+    link: "https://www.ycombinator.com/",
+  },
+  {
     id: "project5",
     title: "AI/ML Engineer",
     subtitle: "Lightcast Discovery",
