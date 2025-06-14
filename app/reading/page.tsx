@@ -30,8 +30,33 @@ export default function ReadingPage() {
 
         {/* Content section */}
         <div className="w-full px-8">
+          <div className="space-y-4 mb-8">
+            <p className="text-lg font-medium mb-4">why i read:</p>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <input type="checkbox" className="mt-1.5 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary" />
+                <p className="text-lg">to see the world through the lens of writers who widen my aperture for the beauty in this world</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <input type="checkbox" className="mt-1.5 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary" />
+                <p className="text-lg">to learn the language of vulnerability and raw honesty</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <input type="checkbox" className="mt-1.5 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary" />
+                <p className="text-lg">to gain clarity in my lived experiences</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <input type="checkbox" className="mt-1.5 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary" />
+                <p className="text-lg">to search for courage</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <input type="checkbox" className="mt-1.5 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary" />
+                <p className="text-lg">to challenge my perspective and nurture my cultural dialogue/empathy</p>
+              </div>
+            </div>
+          </div>
           <p className="text-lg">
-            these are some of my favourite books :) ... and check out my{" "}
+            ... or check out my{" "}
             <a 
               href="https://www.goodreads.com/user/show/147037822-soo-kim" 
               target="_blank"
@@ -40,7 +65,6 @@ export default function ReadingPage() {
             >
               goodreads
             </a>
-            !
           </p>
         </div>
       </div>
