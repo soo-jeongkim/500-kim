@@ -43,7 +43,7 @@ export default function ProjectsPage() {
       {/* Content */}
       <div className="flex flex-col items-center pt-16 px-4 pb-32 md:pb-16 max-w-7xl mx-auto">
         {/* Heading at the top - updated text without emoji */}
-        <h1 className="text-2xl font-medium mb-12 mt-8">what i've been doing</h1>
+        <h1 className="text-2xl font-medium mb-12 mt-8">projects</h1>
 
         {/* Category filter - sticky only on mobile */}
         <div className="sticky md:static top-0 z-10 w-full md:w-auto 
