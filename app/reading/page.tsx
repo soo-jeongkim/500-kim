@@ -3,26 +3,9 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import { useState } from "react"
-import { books, categories } from "@/data/books"
+import { books } from "@/data/books"
 
 export default function ReadingPage() {
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-
-  const handleCategoryToggle = (categoryId: string) => {
-    setSelectedCategories(prev => 
-      prev.includes(categoryId)
-        ? prev.filter(id => id !== categoryId)
-        : [...prev, categoryId]
-    );
-  };
-
-  const filteredBooks = selectedCategories.length > 0
-    ? books.filter(book => 
-        book.categories.some(category => selectedCategories.includes(category))
-      )
-    : books;
-
   return (
     <div className="min-h-screen bg-background relative">
       {/* Back button in top left corner */}
@@ -42,57 +25,32 @@ export default function ReadingPage() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col items-start pt-16 px-16 pb-32 md:pb-16 max-w-7xl mx-auto">
-        {/* Heading at the top */}
-        <h1 className="text-2xl font-medium mb-12 mt-8 w-full text-center">what i've been reading</h1>
-
-        {/* Content section */}
-        <div className="w-full px-8">
-          <div className="space-y-4 mb-8">
-            <p className="text-lg font-medium mb-4">why i read:</p>
-            <div className="space-y-3">
-              {categories.map((category) => (
-                <div key={category.id} className="flex items-start gap-3">
-                  <input
-                    type="checkbox"
-                    id={category.id}
-                    checked={selectedCategories.includes(category.id)}
-                    onChange={() => handleCategoryToggle(category.id)}
-                    className="mt-1.5 h-4 w-4 appearance-none rounded border border-gray-300 bg-white checked:bg-black checked:border-black dark:bg-white dark:checked:bg-black dark:checked:border-white focus:ring-0 focus:ring-offset-0 focus:border-gray-400 cursor-pointer transition-colors duration-200 [background-image:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%201.06-1.06L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200z%22%2F%3E%3C%2Fsvg%3E')] checked:[background-image:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%201.06-1.06L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200z%22%2F%3E%3C%2Fsvg%3E')]"
-                  />
-                  <label htmlFor={category.id} className="text-lg font-normal cursor-pointer">
-                    {category.text}
-                  </label>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <p className="text-lg font-normal mb-8">
-            ... or check out my{" "}
-            <a 
-              href="https://www.goodreads.com/user/show/147037822-soo-kim" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary underline"
-            >
-              goodreads
-            </a>
-            !
-          </p>
-
-          {/* Book covers grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
-            {filteredBooks.map((book) => (
-              <img
-                key={book.id}
-                src={book.image}
-                alt={`${book.title} by ${book.author}`}
-                className="w-full aspect-[2/3] object-cover shadow-md hover:shadow-lg transition-shadow"
-              />
-            ))}
-          </div>
+      <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-16 pb-32 md:pb-16 max-w-7xl mx-auto">
+        {/* Book covers grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
+          {books.map((book) => (
+            <img
+              key={book.id}
+              src={book.image}
+              alt={`${book.title} by ${book.author}`}
+              className="w-full aspect-[2/3] object-cover shadow-md hover:shadow-lg transition-shadow"
+            />
+          ))}
         </div>
+
+        {/* Goodreads link */}
+        <p className="text-lg font-normal">
+          ... or check out my{" "}
+          <a 
+            href="https://www.goodreads.com/user/show/147037822-soo-kim" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline"
+          >
+            goodreads
+          </a>
+          !
+        </p>
       </div>
     </div>
   )
