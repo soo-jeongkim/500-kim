@@ -27,7 +27,7 @@ export default function ReadingPage() {
       {/* Content */}
       <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-16 pb-32 md:pb-16 max-w-7xl mx-auto">
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <h1 className="text-xl md:text-2xl font-bold mb-20 text-center">
           soo's bookshelf
         </h1>
 
