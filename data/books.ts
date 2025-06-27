@@ -132,6 +132,20 @@ export const books: Book[] = [
     author: "Jesmyn Ward",
     image: "/books/men we reaped.jpg",
     categories: ["courage", "perspective"]
+  },
+  {
+    id: "mrs-dalloway",
+    title: "Mrs. Dalloway",
+    author: "Virginia Woolf",
+    image: "/books/dalloway.jpg",
+    categories: ["beauty", "clarity"]
+  },
+  {
+    id: "sky",
+    title: "Sky",
+    author: "Unknown",
+    image: "/books/sky.jpg",
+    categories: ["beauty"]
   }
 ];
 

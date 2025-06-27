@@ -26,6 +26,11 @@ export default function ReadingPage() {
 
       {/* Content */}
       <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-16 pb-32 md:pb-16 max-w-7xl mx-auto">
+        {/* Title */}
+        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          soo's bookshelf
+        </h1>
+
         {/* Book covers grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
           {books.map((book) => (
