@@ -29,18 +29,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
         transition={{ duration: 0.5 }}
         whileHover={{ y: -5, transition: { duration: 0.2 } }}
       >
-        {/* Project Image */}
-        {project.imageUrl && (
-          <div className="relative h-24 overflow-hidden">
-            <img
-              src={project.imageUrl}
-              alt={project.title}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
-          </div>
-        )}
-        
         <div className="p-6 flex flex-col flex-grow">
           <div className="flex flex-wrap gap-1 mb-2">
             {categories.map((category) => {
@@ -65,22 +53,43 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {subtitle && <p className="text-sm text-muted-foreground mb-2 dark:text-foreground/70">{subtitle}</p>}
           <p className="text-muted-foreground text-sm flex-grow line-clamp-3 dark:text-foreground/80">{description}</p>
 
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="mt-4 text-sm font-medium text-primary hover:underline inline-flex items-center
-            dark:text-primary/90 dark:hover:text-primary"
-          >
-            Learn more
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          {project.link && project.link !== "#" ? (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 text-sm font-medium text-primary hover:underline inline-flex items-center
+              dark:text-primary/90 dark:hover:text-primary"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </button>
+              Learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 ml-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          ) : (
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="mt-4 text-sm font-medium text-primary hover:underline inline-flex items-center
+              dark:text-primary/90 dark:hover:text-primary"
+            >
+              Learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 ml-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          )}
         </div>
 
         <div
