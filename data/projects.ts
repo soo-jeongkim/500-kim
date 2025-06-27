@@ -29,7 +29,7 @@ export const projects: Project[] = [
     description: "bringing together YC AI SUS attendees with key players in the AIxBio scene",
     categories: ["ai", "bio", "events"],
     imageUrl: "/images/aibio.jpg",
-    link: "#",
+    link: "https://partiful.com/e/QAZXUEOw7tCjYghFC6qM",
   },
   {
     id: "project16",

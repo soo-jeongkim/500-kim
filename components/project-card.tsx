@@ -29,6 +29,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
         transition={{ duration: 0.5 }}
         whileHover={{ y: -5, transition: { duration: 0.2 } }}
       >
+        {/* Project Image */}
+        {project.imageUrl && (
+          <div className="relative h-24 overflow-hidden">
+            <img
+              src={project.imageUrl}
+              alt={project.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+          </div>
+        )}
+        
         <div className="p-6 flex flex-col flex-grow">
           <div className="flex flex-wrap gap-1 mb-2">
             {categories.map((category) => {
