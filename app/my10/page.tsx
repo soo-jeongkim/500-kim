@@ -39,6 +39,24 @@ export default function My10Page() {
         </div>
       </div>
 
+      {/* Page numbers 1-10 */}
+      <div className="fixed left-8 top-0 w-full h-full pointer-events-none">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
+          <div 
+            key={number} 
+            className="h-screen flex items-center justify-start"
+            style={{ paddingTop: '20vh' }}
+          >
+            <div 
+              className="text-9xl font-bold text-black"
+              style={{ color: 'black' }}
+            >
+              {number}
+            </div>
+          </div>
+        ))}
+      </div>
+
       {/* Bottom arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="text-6xl font-black text-black">⌄</div>
