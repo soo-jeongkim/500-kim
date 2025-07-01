@@ -122,8 +122,30 @@ export default function My10Page() {
         </div>
       </div>
 
-      {/* Placeholder pages for 5-10 */}
-      {[5, 6, 7, 8, 9, 10].map((number) => (
+      {/* Page 5 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 5 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">5</div>
+        </div>
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/김선두 2호선.jpeg" 
+              alt="김선두 2호선" 
+              className="max-w-full h-auto max-h-[48rem] object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              김선두 | 2호선 | 1985
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Placeholder pages for 6-10 */}
+      {[6, 7, 8, 9, 10].map((number) => (
         <div key={number} className="min-h-screen flex items-center relative">
           <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
             <div className="text-9xl font-bold text-black">{number}</div>
