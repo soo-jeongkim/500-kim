@@ -41,7 +41,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 1 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">1</div>
+          <div className="text-9xl font-bold text-foreground">1</div>
         </div>
         
         {/* Image and caption */}
@@ -52,7 +52,7 @@ export default function My10Page() {
               alt="이유태 탐구" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               이유태 | 인물일대(人物一對) - 탐구(探究) | 1944
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 2 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">2</div>
+          <div className="text-9xl font-bold text-foreground">2</div>
         </div>
         
         {/* Image and caption */}
@@ -74,7 +74,7 @@ export default function My10Page() {
               alt="김환기 여인들과 항아리" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               김환기 | 여인들과 항아리 | 1960
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 3 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">3</div>
+          <div className="text-9xl font-bold text-foreground">3</div>
         </div>
         
         {/* Image and caption */}
@@ -96,7 +96,7 @@ export default function My10Page() {
               alt="이중섭 황소" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               이중섭 | 황소 | 1953
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 4 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">4</div>
+          <div className="text-9xl font-bold text-foreground">4</div>
         </div>
         
         {/* Image and caption */}
@@ -118,7 +118,7 @@ export default function My10Page() {
               alt="백래현 여인" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               백래현 | 여인 | 1942
             </p>
           </div>
@@ -129,7 +129,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 5 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">5</div>
+          <div className="text-9xl font-bold text-foreground">5</div>
         </div>
         
         {/* Image and caption */}
@@ -140,7 +140,7 @@ export default function My10Page() {
               alt="이인성 가을 어느 날" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               이인성 | 가을 어느 날 | 1934
             </p>
           </div>
@@ -151,7 +151,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 6 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">6</div>
+          <div className="text-9xl font-bold text-foreground">6</div>
         </div>
         
         {/* Image and caption */}
@@ -162,7 +162,7 @@ export default function My10Page() {
               alt="김기창 군마" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               김기창 | 군마 | 1955
             </p>
           </div>
@@ -173,7 +173,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 7 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">7</div>
+          <div className="text-9xl font-bold text-foreground">7</div>
         </div>
         
         {/* Image and caption */}
@@ -184,7 +184,7 @@ export default function My10Page() {
               alt="천경자 탱고가 흐르는 황혼" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               천경자 | 탱고가 흐르는 황혼 | 1978
             </p>
           </div>
@@ -195,7 +195,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 8 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">8</div>
+          <div className="text-9xl font-bold text-foreground">8</div>
         </div>
         
         {/* Image and caption */}
@@ -206,7 +206,7 @@ export default function My10Page() {
               alt="이응노 향원정" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               이응노 | 향원정 | 1950
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 9 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">9</div>
+          <div className="text-9xl font-bold text-foreground">9</div>
         </div>
         
         {/* Image and caption */}
@@ -228,7 +228,7 @@ export default function My10Page() {
               alt="구본웅 친구의 초상" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               구본웅 | 친구의 초상 | 1935
             </p>
           </div>
@@ -239,7 +239,7 @@ export default function My10Page() {
       <div className="min-h-screen flex items-center relative">
         {/* Number 10 */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-          <div className="text-9xl font-bold text-black">10</div>
+          <div className="text-9xl font-bold text-foreground">10</div>
         </div>
         
         {/* Image and caption */}
@@ -250,7 +250,7 @@ export default function My10Page() {
               alt="장우성 귀목" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
-            <p className="text-lg text-center text-black">
+            <p className="text-lg text-center text-foreground">
               장우성 | 귀목 | 1935
             </p>
           </div>
