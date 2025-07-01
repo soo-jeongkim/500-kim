@@ -30,8 +30,11 @@ export default function My10Page() {
 
         {/* Description */}
         <p className="text-lg leading-relaxed text-left mb-12 max-w-2xl">
-          Back in undergrad, a lecturer once said that one of the simplest yet the most earnest form of self-introduction is by sharing your top 10 favorite things in a subject you deeply care about. I have a deep interest in 20th century modernist korean painting, and here are my top 10.
+          When I was an undergraduate, a lecturer told us that one of the simplest—and most sincere—ways of self-introducion is by sharing your top ten favorite things about a subject you love. I have a deep interest in 20th-century Korean modernist painting, so here are my top ten.
         </p>
+
+        {/* Scroll down arrow */}
+        <div className="text-6xl font-black text-black">⌄</div>
       </div>
 
       {/* Page 1 */}
@@ -252,11 +255,6 @@ export default function My10Page() {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* Bottom arrow */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-6xl font-black text-black">⌄</div>
       </div>
     </div>
   )
