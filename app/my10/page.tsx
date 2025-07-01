@@ -26,10 +26,10 @@ export default function My10Page() {
       {/* Content */}
       <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-16 pb-32 md:pb-16 max-w-4xl mx-auto">
         {/* Title */}
-        <h1 className="text-9xl font-bold mb-8 text-center" style={{ color: 'rgb(215, 92, 20)' }}>my 10</h1>
+        <h1 className="text-9xl font-bold mb-8 text-center" style={{ color: 'rgb(215, 92, 20)' }}>10</h1>
 
         {/* Description */}
-        <p className="text-lg leading-relaxed text-left mb-12 max-w-2xl" style={{ fontFamily: 'GaramondUS, serif' }}>
+        <p className="text-3xl leading-relaxed text-left mb-12 max-w-4xl" style={{ fontFamily: 'GaramondUS, serif' }}>
           When I was an undergraduate, a lecturer told us that one of the simplest—and most sincere—ways of self-introducion is by sharing your top ten favorite things about a subject you love. I have a deep interest in 20th-century Korean modernist painting, so here are my top ten.
         </p>
 
