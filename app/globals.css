@@ -23,6 +23,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GaramondUS';
+  src: url('/fonts/garamond-us/GaramondUS.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GaramondUS';
+  src: url('/fonts/garamond-us/GaramondUSI.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GaramondUS';
+  src: url('/fonts/garamond-us/GaramondUSB.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GaramondUS';
+  src: url('/fonts/garamond-us/GaramondUSBI.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

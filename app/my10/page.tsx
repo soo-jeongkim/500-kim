@@ -29,7 +29,7 @@ export default function My10Page() {
         <h1 className="text-9xl font-bold mb-8 text-center" style={{ color: 'rgb(215, 92, 20)' }}>my 10</h1>
 
         {/* Description */}
-        <p className="text-lg leading-relaxed text-left mb-12 max-w-2xl">
+        <p className="text-lg leading-relaxed text-left mb-12 max-w-2xl" style={{ fontFamily: 'GaramondUS, serif' }}>
           When I was an undergraduate, a lecturer told us that one of the simplest—and most sincere—ways of self-introducion is by sharing your top ten favorite things about a subject you love. I have a deep interest in 20th-century Korean modernist painting, so here are my top ten.
         </p>
 
