@@ -32,33 +32,17 @@ export default function My10Page() {
         <p className="text-lg leading-relaxed text-left mb-12 max-w-2xl">
           Back in undergrad, a lecturer once said that one of the simplest yet the most earnest form of self-introduction is by sharing your top 10 favorite things in a subject you deeply care about. I have a deep interest in 20th century modernist korean painting, and here are my top 10.
         </p>
+      </div>
 
-        {/* Content area for the top 10 items will go here */}
-        <div className="w-full">
-          {/* Top 10 items will be added here */}
+      {/* Page 1 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 1 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">1</div>
         </div>
-      </div>
-
-      {/* Page numbers 1-10 */}
-      <div className="fixed left-8 top-0 w-full h-full pointer-events-none">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
-          <div 
-            key={number} 
-            className="h-screen flex items-center justify-start"
-          >
-            <div 
-              className="text-9xl font-bold text-black"
-              style={{ color: 'black' }}
-            >
-              {number}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Page 1 Content */}
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none">
-        <div className="h-screen flex items-center justify-center">
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
           <div className="flex flex-col items-center space-y-6 max-w-2xl">
             <img 
               src="/my10/이유태 탐구.jpeg" 
@@ -71,6 +55,15 @@ export default function My10Page() {
           </div>
         </div>
       </div>
+
+      {/* Placeholder pages for 2-10 */}
+      {[2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
+        <div key={number} className="min-h-screen flex items-center relative">
+          <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+            <div className="text-9xl font-bold text-black">{number}</div>
+          </div>
+        </div>
+      ))}
 
       {/* Bottom arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
