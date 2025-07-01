@@ -2,7 +2,7 @@
 
 import type * as React from "react"
 import { motion } from "framer-motion"
-import { Laptop, BookOpen, Lightbulb, Send } from "lucide-react"
+import { Archive, Laptop, BookOpen, Lightbulb, Send } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -16,6 +16,14 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
+  {
+    icon: <Archive className="h-5 w-5" />,
+    labelEN: "My 10",
+    labelKR: "내 10",
+    href: "/my10",
+    gradient: "radial-gradient(circle, rgba(147,51,234,0.15) 0%, rgba(126,34,206,0.06) 50%, rgba(107,33,168,0) 100%)",
+    iconColor: "text-purple-500",
+  },
   {
     icon: <Laptop className="h-5 w-5" />,
     labelEN: "Projects",
