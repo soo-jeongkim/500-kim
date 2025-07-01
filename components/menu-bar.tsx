@@ -2,7 +2,7 @@
 
 import type * as React from "react"
 import { motion } from "framer-motion"
-import { Laptop, BookOpen, Send } from "lucide-react"
+import { Laptop, BookOpen, Lightbulb, Send } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -31,6 +31,14 @@ const menuItems: MenuItem[] = [
     href: "/reading",
     gradient: "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
     iconColor: "text-orange-500",
+  },
+  {
+    icon: <Lightbulb className="h-5 w-5" />,
+    labelEN: "Resources",
+    labelKR: "자료실",
+    href: "/resources",
+    gradient: "radial-gradient(circle, rgba(234,179,8,0.15) 0%, rgba(202,138,4,0.06) 50%, rgba(161,98,7,0) 100%)",
+    iconColor: "text-yellow-500",
   },
   {
     icon: <Send className="h-5 w-5" />,
