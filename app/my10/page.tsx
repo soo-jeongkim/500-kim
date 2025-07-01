@@ -26,7 +26,10 @@ export default function My10Page() {
       {/* Content */}
       <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-16 pb-32 md:pb-16 max-w-4xl mx-auto">
         {/* Title */}
-        <h1 className="text-6xl font-bold mb-8 text-center" style={{ color: 'rgb(215, 92, 20)' }}>My Top 10</h1>
+        <h1 className="text-6xl font-bold mb-8 text-center" style={{ color: 'rgb(215, 92, 20)' }}>my 10</h1>
+        
+        {/* Downward arrow */}
+        <div className="text-4xl mb-8 text-center" style={{ color: 'rgb(215, 92, 20)' }}>↓</div>
 
         {/* Description */}
         <p className="text-lg leading-relaxed text-left mb-12 max-w-2xl">
