@@ -144,8 +144,52 @@ export default function My10Page() {
         </div>
       </div>
 
-      {/* Placeholder pages for 6-10 */}
-      {[6, 7, 8, 9, 10].map((number) => (
+      {/* Page 6 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 6 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">6</div>
+        </div>
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/김기창 군마 1955.jpg" 
+              alt="김기창 군마" 
+              className="max-w-full h-auto max-h-[48rem] object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              김기창 | 군마 | 1955
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Page 7 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 7 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">7</div>
+        </div>
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/탱고가 흐르는 황혼 1978.jpeg" 
+              alt="천경자 탱고가 흐르는 황혼" 
+              className="max-w-full h-auto max-h-[48rem] object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              천경자 | 탱고가 흐르는 황혼 | 1978
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Placeholder pages for 8-10 */}
+      {[8, 9, 10].map((number) => (
         <div key={number} className="min-h-screen flex items-center relative">
           <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
             <div className="text-9xl font-bold text-black">{number}</div>
