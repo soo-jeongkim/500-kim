@@ -25,27 +25,13 @@ export default function ReadingPage() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-16 pb-32 md:pb-16 max-w-7xl mx-auto">
+      <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-16 pb-32 md:pb-16 max-w-4xl mx-auto">
         {/* Title */}
-        <h1 className="text-xl md:text-2xl font-bold mb-20 text-center">
-          soo's bookshelf
-        </h1>
+        <h1 className="text-9xl font-bold mb-8 text-center" style={{ color: 'rgb(215, 92, 20)' }}>Bookshelf</h1>
 
-        {/* Book covers grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
-          {books.map((book) => (
-            <img
-              key={book.id}
-              src={book.image}
-              alt={`${book.title} by ${book.author}`}
-              className="w-full aspect-[2/3] object-cover shadow-md hover:shadow-lg transition-shadow"
-            />
-          ))}
-        </div>
-
-        {/* Goodreads link */}
-        <p className="text-lg font-normal">
-          ... or check out my{" "}
+        {/* Description */}
+        <p className="text-xl leading-relaxed text-left mb-12 max-w-4xl" style={{ fontFamily: 'GaramondUS, serif' }}>
+          These are some of my favourite books. Here's my{" "}
           <a 
             href="https://www.goodreads.com/user/show/147037822-soo-kim" 
             target="_blank"
@@ -54,8 +40,28 @@ export default function ReadingPage() {
           >
             goodreads
           </a>
-          !
+          .
         </p>
+
+        {/* Scroll down arrow */}
+        <div className="text-6xl font-black text-black">⌄</div>
+      </div>
+
+      {/* Books section */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Books grid */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-7xl mx-auto px-8">
+            {books.map((book) => (
+              <img
+                key={book.id}
+                src={book.image}
+                alt={`${book.title} by ${book.author}`}
+                className="w-full aspect-[2/3] object-cover shadow-md hover:shadow-lg transition-shadow"
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
