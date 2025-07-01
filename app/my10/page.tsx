@@ -55,7 +55,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               이유태 | 인물일대(人物一對) - 탐구(探究) | 1944
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Lee Yootae | Pair of Figures - Inquiry | 1944
             </p>
           </div>
@@ -80,7 +80,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               김환기 | 여인들과 항아리 | 1960
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Kim Whanki | Women and Jars | 1960
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               이중섭 | 황소 | 1953
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Lee Jungseop | The Bull | 1953
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               백래현 | 여인 | 1942
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Baek Raehyun | Woman | 1942
             </p>
           </div>
@@ -155,7 +155,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               이인성 | 가을 어느 날 | 1934
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Lee Inseong | A Certain Day in Autumn | 1934
             </p>
           </div>
@@ -180,7 +180,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               김기창 | 군마 | 1955
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Kim Kichang | Horses | 1955
             </p>
           </div>
@@ -205,7 +205,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               천경자 | 탱고가 흐르는 황혼 | 1978
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Chun Kyungja | Tango's Flowing Twilight | 1978
             </p>
           </div>
@@ -230,7 +230,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               이응노 | 향원정 | 1950
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Lee Ungno | Hyangwonjeong | 1950
             </p>
           </div>
@@ -255,7 +255,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               구본웅 | 친구의 초상 | 1935
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Gu Bonung | Portrait of a Friend | 1935
             </p>
           </div>
@@ -280,7 +280,7 @@ export default function My10Page() {
             <p className="text-lg text-center text-foreground">
               장우성 | 귀목 | 1935
             </p>
-            <p className="text-lg text-center text-foreground" style={{ fontFamily: 'GaramondUS, serif' }}>
+            <p className="text-lg text-center text-foreground -mt-2" style={{ fontFamily: 'GaramondUS, serif' }}>
               Jang Wooseong | Gwimok | 1935
             </p>
           </div>
