@@ -78,8 +78,52 @@ export default function My10Page() {
         </div>
       </div>
 
-      {/* Placeholder pages for 3-10 */}
-      {[3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
+      {/* Page 3 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 3 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">3</div>
+        </div>
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/황소 1953 이중섭.webp" 
+              alt="이중섭 황소" 
+              className="max-w-full h-auto max-h-[48rem] object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              이중섭 | 황소 | 1953
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Page 4 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 4 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">4</div>
+        </div>
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/백래현 여인.jpg" 
+              alt="백래현 여인" 
+              className="max-w-full h-auto max-h-[48rem] object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              백래현 | 여인 | 1942
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Placeholder pages for 5-10 */}
+      {[5, 6, 7, 8, 9, 10].map((number) => (
         <div key={number} className="min-h-screen flex items-center relative">
           <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
             <div className="text-9xl font-bold text-black">{number}</div>
