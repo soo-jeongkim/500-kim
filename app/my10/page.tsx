@@ -41,7 +41,7 @@ export default function My10Page() {
 
       {/* Bottom arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-6xl font-black text-black">V</div>
+        <div className="text-6xl font-black text-black">⌄</div>
       </div>
     </div>
   )
