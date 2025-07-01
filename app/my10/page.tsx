@@ -188,14 +188,71 @@ export default function My10Page() {
         </div>
       </div>
 
-      {/* Placeholder pages for 8-10 */}
-      {[8, 9, 10].map((number) => (
-        <div key={number} className="min-h-screen flex items-center relative">
-          <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-            <div className="text-9xl font-bold text-black">{number}</div>
+      {/* Page 8 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 8 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">8</div>
+        </div>
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/이응노 향원정.jpg" 
+              alt="이응노 향원정" 
+              className="max-w-full h-auto max-h-[48rem] object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              이응노 | 향원정 | 1950
+            </p>
           </div>
         </div>
-      ))}
+      </div>
+
+      {/* Page 9 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 9 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">9</div>
+        </div>
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/구본웅 친구의 초상.jpg" 
+              alt="구본웅 친구의 초상" 
+              className="max-w-full h-auto max-h-[48rem] object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              구본웅 | 친구의 초상 | 1935
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Page 10 */}
+      <div className="min-h-screen flex items-center relative">
+        {/* Number 10 */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
+          <div className="text-9xl font-bold text-black">10</div>
+        </div>
+        
+        {/* Image and caption */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/장우성 귀목 1935.png" 
+              alt="장우성 귀목" 
+              className="max-w-full h-auto max-h-[48rem] object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              장우성 | 귀목 | 1935
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Bottom arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
