@@ -133,12 +133,12 @@ export default function My10Page() {
         <div className="flex-1 flex items-center justify-center">
           <div className="flex flex-col items-center space-y-6 max-w-2xl">
             <img 
-              src="/my10/김선두 2호선.jpeg" 
-              alt="김선두 2호선" 
+              src="/my10/이인성 가을 어느 날.jpg" 
+              alt="이인성 가을 어느 날" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
             <p className="text-lg text-center text-black">
-              김선두 | 2호선 | 1985
+              이인성 | 가을 어느 날 | 1934
             </p>
           </div>
         </div>
