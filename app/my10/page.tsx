@@ -246,7 +246,7 @@ export default function My10Page() {
         <div className="flex-1 flex items-center justify-center">
           <div className="flex flex-col items-center space-y-6 max-w-2xl">
             <img 
-              src="/my10/장우성 귀목 1935.png" 
+              src="/my10/장우성 귀목 1935 .jpeg" 
               alt="장우성 귀목" 
               className="max-w-full h-auto max-h-[48rem] object-contain"
             />
