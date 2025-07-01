@@ -17,14 +17,6 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   {
-    icon: <Archive className="h-5 w-5" />,
-    labelEN: "My 10",
-    labelKR: "내 10",
-    href: "/my10",
-    gradient: "radial-gradient(circle, rgba(147,51,234,0.15) 0%, rgba(126,34,206,0.06) 50%, rgba(107,33,168,0) 100%)",
-    iconColor: "text-purple-500",
-  },
-  {
     icon: <Laptop className="h-5 w-5" />,
     labelEN: "Projects",
     labelKR: "프로젝트",
@@ -39,6 +31,14 @@ const menuItems: MenuItem[] = [
     href: "/reading",
     gradient: "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
     iconColor: "text-orange-500",
+  },
+  {
+    icon: <Archive className="h-5 w-5" />,
+    labelEN: "My 10",
+    labelKR: "내 10",
+    href: "/my10",
+    gradient: "radial-gradient(circle, rgba(147,51,234,0.15) 0%, rgba(126,34,206,0.06) 50%, rgba(107,33,168,0) 100%)",
+    iconColor: "text-purple-500",
   },
   {
     icon: <Lightbulb className="h-5 w-5" />,
