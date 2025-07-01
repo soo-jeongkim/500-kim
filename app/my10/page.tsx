@@ -57,6 +57,22 @@ export default function My10Page() {
         ))}
       </div>
 
+      {/* Page 1 Content */}
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none">
+        <div className="h-screen flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-6 max-w-2xl">
+            <img 
+              src="/my10/이유태 탐구.jpeg" 
+              alt="이유태 탐구" 
+              className="max-w-full h-auto max-h-96 object-contain"
+            />
+            <p className="text-lg text-center text-black">
+              이유태 | 인물일대(人物一對) - 탐구(探究) | 1944
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="text-6xl font-black text-black">⌄</div>
