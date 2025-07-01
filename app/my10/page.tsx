@@ -45,7 +45,6 @@ export default function My10Page() {
           <div 
             key={number} 
             className="h-screen flex items-center justify-start"
-            style={{ paddingTop: '20vh' }}
           >
             <div 
               className="text-9xl font-bold text-black"
