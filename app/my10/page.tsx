@@ -63,7 +63,7 @@ export default function My10Page() {
             <img 
               src="/my10/이유태 탐구.jpeg" 
               alt="이유태 탐구" 
-              className="max-w-full h-auto max-h-96 object-contain"
+              className="max-w-full h-auto max-h-[48rem] object-contain"
             />
             <p className="text-lg text-center text-black">
               이유태 | 인물일대(人物一對) - 탐구(探究) | 1944
